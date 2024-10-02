@@ -1,14 +1,19 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 import toast, { Toaster } from "react-hot-toast";
 import css from "./SearchBar.module.css";
 
-export default function SearchBar({ onSubmit }) {
-  
-    const [value, setValue] = useState("");
+interface SearchBarProps {
+  onSubmit: (value: string) => void;
+}
 
-    function handleSubmit(event) {
+const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
+  
+  
+  const [value, setValue] = useState<string>("");
+
+    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
       event.preventDefault();
       if (value.trim() === "") {
         toast.error("The input field cannot be empty");
@@ -19,7 +24,7 @@ export default function SearchBar({ onSubmit }) {
       setValue("");
     }
 
-    function inputChange(event) {
+    function inputChange(event: React.ChangeEvent<HTMLInputElement>) {
       setValue(event.target.value);
     }
     return (
@@ -46,3 +51,5 @@ export default function SearchBar({ onSubmit }) {
       </header>
     );
 }
+
+export default SearchBar;
