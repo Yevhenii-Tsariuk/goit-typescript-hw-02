@@ -1,0 +1,88 @@
+.header {
+  background-color: rgb(2, 2, 166);
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 20px;
+}
+.input {
+  width: 300px;
+  height: 34px;
+  border-radius: 4px;
+  padding: 2px 5px 2px 40px;
+}
+.input:focus-within {
+  background-color: white;
+}
+.form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.button {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button:hover,
+:focus {
+  background-color: transparent;
+}
+
+
+
+
+
+
+/* .header {
+  background-color: rgb(75, 1, 196);
+  padding-top: 6px;
+  padding-bottom: 8px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  position: relative;
+  color: var(--gray00);
+  background: var(--gray75);
+  border: 1px solid #f9f0da;
+  border-radius: 4px;
+  margin: 6px 0 0 0;
+  padding: 0 10px 0 32px;
+  font-size: 18px;
+  width: 360px;
+  height: 34px;
+  background-color: #f9f0da;
+}
+
+.button {
+  position: absolute;
+  top: 3%;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: 0 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: start;
+  font-size: inherit;
+  left: 35%;
+  cursor: pointer;
+}
+
+.icon {
+  top: 4%;
+  left: 4%;
+  width: 18px;
+  height: 18px;
+  stroke: rgb(121, 121, 121);
+} */

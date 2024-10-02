@@ -1,0 +1,29 @@
+.modal {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     right: auto;
+     bottom: auto;
+     transform: translate(-50%, -50%);
+     background: white;
+     max-width: 91%;
+     max-height: 91%;
+     overflow: auto;
+   }
+   
+   .overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.80);
+   }
+   
+   .largeImage {
+    max-width: 90vw; 
+  max-height: 90vh; 
+  object-fit: contain;
+  display: block;
+  margin: auto;
+   }

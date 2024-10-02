@@ -1,0 +1,16 @@
+.card{
+     box-shadow: 2px 2px 5px grey;
+     width: 100%;
+     height: 100%;
+}
+
+.image {
+     transition: transform 0.3s ease; 
+     width: 100%;
+     height: 100%;
+   }
+   
+   .image:hover {
+     transform: scale(1.03); 
+     cursor: zoom-in;
+   }
