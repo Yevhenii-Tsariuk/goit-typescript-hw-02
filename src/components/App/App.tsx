@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
+import { AxiosResponse } from "axios";
 import toast from "react-hot-toast";
 
 import Loader from "../Loader/Loader";
@@ -39,7 +40,7 @@ export default function App() {
       try {
         setLoading(true);
         setError(false);
-        const response = await axios.get(
+        const response: AxiosResponse<{ results: Photo[]; total: number }> = await axios.get(
           `https://api.unsplash.com/search/photos?client_id=${API_KEY}`,
           {
             params: {
